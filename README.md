@@ -28,11 +28,10 @@ You can modify this repository and push it as a new custom Synthetic Data transf
 
     ? Choose a type of block: Transformation block
     ? Choose an option: Create a new block
-    ? Enter the name of your block: Custom DALL-E Image Generator
-    ? Enter the description of your block: Use the DALL-E API to generate new images.
+    ? Enter the name of your block: Custom Flux-pro Image Generator
+    ? Enter the description of your block: Use the Replicate API to generate new images from Flux-pro.
     ? What type of data does this block operate on? Standalone (runs the container, but no files / data items passed in)
-    ? Which buckets do you want to mount into this block (will be mounted under /mnt/s3fs/BUCKET_NAME, you can change these mount points in the St
-    udio)?
+    ? Which buckets do you want to mount into this block (will be mounted under /mnt/s3fs/BUCKET_NAME, you can change these mount points in the Studio)?
     ? Would you like to download and load the example repository? no
     ```
 
