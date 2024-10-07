@@ -1,0 +1,84 @@
+[
+    {
+        "name": "RP API Key",
+        "value": "",
+        "type": "secret",
+        "help": "An API Key that gives access to Replicate",
+        "param": "RP_API_TOKEN"
+    },
+    {
+        "name": "Prompt",
+        "value": "A realistic top-down image of bunch of small and fully assembled printed circuit boards on a flat conveyer belt with long depth of field",
+        "type": "string",
+        "help": "The prompt to generate images from",
+        "param": "prompt"
+    },
+    {
+        "name": "Label",
+        "value": "pcb",
+        "type": "string",
+        "help": "Images will be added to Edge Impulse with this label",
+        "param": "label"
+    },
+    {
+        "name": "Number of images",
+        "value": "3",
+        "type": "int",
+        "help": "Number of unique images to generate",
+        "param": "images"
+    },
+    {
+        "name": "Upload to category",
+        "value": "split",
+        "type": "select",
+        "valid": [
+            { "label": "Split 80/20 between training and testing", "value": "split" },
+            { "label": "Training", "value": "training" },
+            { "label": "Testing", "value": "testing" }
+        ],
+        "help": "Data will be uploaded to this category in your project",
+        "param": "upload-category"
+    },
+    {
+        "name": "Aspect Ratio",
+        "value": "1:1",
+        "type": "string",
+        "help": "Aspect ratio for the generated image (e.g., '1:1', '16:9')",
+        "param": "aspect_ratio"
+    },
+    {
+        "name": "Steps",
+        "value": "25",
+        "type": "int",
+        "help": "Number of diffusion steps (1-50)",
+        "param": "steps"
+    },
+    {
+        "name": "Guidance",
+        "value": "3",
+        "type": "float",
+        "help": "Controls the balance between adherence to the text prompt and image quality/diversity (2-5) Controls the balance between adherence to the text prompt and image quality/diversity. Higher values make the output more closely match the prompt but may reduce overall image quality. Lower values allow for more creative freedom but might produce results less relevant to the prompt.",
+        "param": "guidance"
+    },
+    {
+        "name": "Interval",
+        "value": "2",
+        "type": "float",
+        "help": "Increases variance in outputs (1-4) Interval is a setting that increases the variance in possible outputs letting the model be a tad more dynamic in what outputs it may produce in terms of composition, color, detail, and prompt interpretation. Setting this value low will ensure strong prompt following with more consistent outputs, setting it higher will produce more dynamic or varied outputs.",
+        "param": "interval"
+    },
+    {
+        "name": "Safety Tolerance",
+        "value": "2",
+        "type": "int",
+        "help": "Safety tolerance, 1 is most strict and 5 is most permissive",
+        "param": "safety_tolerance"
+    },
+    {
+        "name": "Output Format",
+        "value": "png",
+        "type": "string",
+        "help": "Format of the output images (e.g., 'png', 'jpeg')",
+        "param": "output_format"
+    }
+]
