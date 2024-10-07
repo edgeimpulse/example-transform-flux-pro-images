@@ -36,6 +36,8 @@ You can modify this repository and push it as a new custom Synthetic Data transf
     ? Would you like to download and load the example repository? no
     ```
 
+![Synthetic Data](images/synthetic-data.png)
+
 4. Push the block:
 
     ```
